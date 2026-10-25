@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cursed Archive Files Publisher</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6;color:#1f2937;background:#fff}code{display:block;padding:12px;background:#f3f4f6;border-radius:8px;word-break:break-all;font-size:1.05rem}</style></head><body>
+<h1>Cursed Archive Files Publisher</h1>
+<p>Private tool that publishes the owner's original short videos. <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
+<div id="auth" hidden><h2>TikTok sign-in code</h2><p>Copy this code back into the terminal:</p><code id="code"></code></div>
+<script>
+const p = new URLSearchParams(location.search), code = p.get("code");
+if (code) { document.getElementById("code").textContent = code; document.getElementById("auth").hidden = false; }
+</script></body></html>
